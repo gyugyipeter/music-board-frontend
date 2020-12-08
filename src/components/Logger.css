@@ -1,0 +1,109 @@
+.logger {
+  margin-left: 1%;
+  margin-top: 1%;
+  padding: 0.3rem 1rem;
+  display: flex;
+  max-width: 60vw;
+  min-height: 5rem;
+  width: 60vw;
+  overflow: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.logger::-webkit-scrollbar {
+  height: 10px;
+}
+
+.logger::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.logger::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.logger::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.log {
+  cursor: pointer;
+  padding: 0.2rem 1rem;
+  text-align: center;
+  margin-right: 0.6rem;
+  border-radius: 8px;
+  transition-property: transform, box-shadow, opacity;
+  transition-duration: 0.235s;
+}
+
+.log:hover,
+.log:focus {
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.75);
+  transform: translateY(-0.1rem);
+}
+
+.log:active {
+  box-shadow: none;
+  transform: translateY(0);
+  opacity: 60%;
+  background-color: rgba(189, 189, 189, 0.521);
+}
+
+.loggerButtonGroup {
+  margin-right: 10rem;
+  margin-left: 1rem;
+}
+
+.loggerButton {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #60a3bc;
+  padding: 0.45rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  border: 0;
+  width: 110%;
+}
+
+.MdFiberManualRecord.recording {
+  animation-name: recording;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.loggerButton:hover .MdClear {
+  color: red;
+}
+
+.loggerButton:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.loggerButton:disabled {
+  background: #60a3bc8e;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+@keyframes recording {
+  0% {
+    color: red;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}

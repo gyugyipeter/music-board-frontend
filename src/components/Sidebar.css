@@ -1,0 +1,58 @@
+.sidebar {
+  background-color: #212121;
+  color: #fff;
+  border-right: 0.05rem solid black;
+  transition: all 0.3s;
+  position: relative;
+  text-decoration: none;
+  height: calc(100vh - 5rem);
+}
+
+.sidebarHeader {
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 10% 5%;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #fff;
+  background: #2f89fc;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  padding: 10% 10%;
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.sidebar a {
+  font-size: 1.25rem;
+}
+
+.sidebar ul {
+  margin-top: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebarIcon {
+  margin-right: 1rem;
+}
+
+.sidebar ul li a:hover {
+  color: #fff;
+  background: #2f89fc;
+  border-bottom: 1px solid #2f89fc;
+}
+
+.page {
+  font-family: "Mukta", sans-serif;
+  display: grid;
+  grid-template-columns: 10% auto;
+  font-size: 1.3rem;
+}

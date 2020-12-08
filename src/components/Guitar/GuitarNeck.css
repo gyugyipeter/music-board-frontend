@@ -1,0 +1,205 @@
+.guitarTable {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+  background-color: #271c16;
+  color: white;
+  border-collapse: collapse;
+}
+
+.tuningColumn {
+  width: 1%;
+  background-color: #11100e;
+}
+
+.string1,
+.string2,
+.string3,
+.string4,
+.string5,
+.string6 {
+  border-left: 0.2rem solid white;
+  width: 8.5%;
+  content-visibility: hidden;
+}
+
+.string1 {
+  background: linear-gradient(
+    #271c16 0%,
+    #271c16 34%,
+    white 50%,
+    #271c16 66%,
+    #271c16 100%
+  );
+}
+
+.string2 {
+  background: linear-gradient(
+    #271c16 0%,
+    #271c16 37%,
+    white 50%,
+    #271c16 63%,
+    #271c16 100%
+  );
+}
+
+.string3 {
+  background: linear-gradient(
+    #271c16 0%,
+    #271c16 40%,
+    white 50%,
+    #271c16 60%,
+    #271c16 100%
+  );
+}
+
+.string4 {
+  background: linear-gradient(
+    #271c16 0%,
+    #271c16 43%,
+    white 50%,
+    #271c16 57%,
+    #271c16 100%
+  );
+}
+
+.string5 {
+  background: linear-gradient(
+    #271c16 0%,
+    #271c16 46%,
+    white 50%,
+    #271c16 54%,
+    #271c16 100%
+  );
+}
+
+.string6 {
+  background: linear-gradient(
+    #271c16 0%,
+    #271c16 47%,
+    white 50%,
+    #271c16 53%,
+    #271c16 100%
+  );
+}
+
+.nullfret {
+  width: 3.5%;
+  background: #271c16;
+}
+
+.nullheader {
+  width: 3.5%;
+}
+
+.fretNumbers {
+  background-color: #11100e;
+}
+
+.tunerArrow {
+  background: none;
+  border: 0;
+  color: white;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: sub;
+}
+
+.tunerArrow:hover {
+  cursor: pointer;
+}
+
+.guitarRow td.pressed span {
+  background: #11100ee3;
+  display: inline-block;
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+}
+
+.string1.pressed,
+.string2.pressed,
+.string3.pressed,
+.string4.pressed,
+.string5.pressed,
+.string6.pressed {
+  content-visibility: visible;
+}
+
+.guitarNeckPosition {
+  display: flex;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 90%;
+}
+
+.guitarNeckPosition button svg {
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.guitarNeckPosition button:hover {
+  cursor: pointer;
+}
+
+.guitarNeckPosition button:disabled {
+  color: #11100e;
+  cursor: default;
+}
+
+.guitarNeckPosition button {
+  background-color: #11100e;
+  border: none;
+  color: white;
+}
+
+.guitarNeckPositionArrow {
+  height: 2.32rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  z-index: 2;
+}
+
+.leftNeckArrow {
+  margin-right: -3rem;
+  z-index: 1;
+}
+
+.rightNeckArrow {
+  margin-left: -3rem;
+}
+
+.dot:before {
+  content: "•";
+  position: absolute;
+  color: white;
+  top: 260%;
+  z-index: 5;
+  font-size: 5rem;
+}
+
+.twelveFretDot:before {
+  content: "•";
+  position: absolute;
+  color: white;
+  top: 30%;
+  z-index: 5;
+  font-size: 5rem;
+}
+
+.twelveFretDot2:after {
+  content: "•";
+  position: absolute;
+  color: white;
+  top: 495%;
+  z-index: 5;
+  font-size: 5rem;
+  left: 45%;
+}
+
+.fretNumbers th {
+  position: relative;
+}

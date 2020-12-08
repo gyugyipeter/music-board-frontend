@@ -1,0 +1,131 @@
+.noteDisplaySwitch {
+  font-size: 1rem;
+  text-align: -webkit-center;
+  width: 10%;
+}
+
+.pianoGroup {
+  margin-right: 3rem;
+}
+
+.singlePianoGroup {
+  display: flex;
+  align-items: center;
+}
+
+.pianospace {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  place-content: center;
+  grid-gap: 30rem;
+  margin-left: 5rem;
+}
+
+.octaves {
+  grid-gap: 35rem
+}
+
+.arrow {
+  background: none;
+  border: 0;
+  border-radius: 100%;
+  padding: 0;
+  height: fit-content;
+  margin: 0.5rem;
+}
+
+.arrow:not(:disabled):hover {
+  background-color: rgba(70, 70, 70, 0.15);
+  color: white;
+  cursor: pointer;
+}
+
+/* toogle design */
+.tgl {
+  display: none;
+}
+
+.tgl,
+.tgl:after,
+.tgl:before,
+.tgl *,
+.tgl *:after,
+.tgl *:before,
+.tgl + .tgl-btn {
+  box-sizing: border-box;
+}
+
+.tgl::-moz-selection,
+.tgl:after::-moz-selection,
+.tgl:before::-moz-selection,
+.tgl *::-moz-selection,
+.tgl *:after::-moz-selection,
+.tgl *:before::-moz-selection,
+.tgl + .tgl-btn::-moz-selection {
+  background: none;
+}
+
+.tgl::selection,
+.tgl:after::selection,
+.tgl:before::selection,
+.tgl *::selection,
+.tgl *:after::selection,
+.tgl *:before::selection,
+.tgl + .tgl-btn::selection {
+  background: none;
+}
+
+.tgl + .tgl-btn {
+  outline: 0;
+  display: block;
+  width: 4em;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tgl + .tgl-btn:after,
+.tgl + .tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+
+.tgl + .tgl-btn:after {
+  left: 0;
+}
+
+.tgl + .tgl-btn:before {
+  display: none;
+}
+
+.tgl:checked + .tgl-btn:after {
+  left: 50%;
+}
+
+.tgl + .tgl-btn {
+  text-align: center;
+  background: #dfdfdf;
+  border-radius: 2em;
+  padding: 2px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.tgl + .tgl-btn:after {
+  border-radius: 50%;
+  background: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.tgl:checked + .tgl-btn {
+  background: #60a3bc;
+}
