@@ -47,7 +47,7 @@
 .log:active {
   box-shadow: none;
   transform: translateY(0);
-  opacity: 60%;
+  opacity: 0.6;
   background-color: rgba(189, 189, 189, 0.521);
 }
 
