@@ -15,12 +15,15 @@ const initializeHowl = (src) => {
 };
 
 getPiano().forEach(function (value) {
+  console.log(value)
   initializeHowl(value);
 });
 getCleanGuitar().forEach(function (value) {
+  console.log(value)
   initializeHowl(value);
 });
 getDistortedGuitar().forEach(function (value) {
+  console.log(value)
   initializeHowl(value);
 });
 
