@@ -33,22 +33,6 @@ distortedGuitarSounds.forEach((audioFile) => {
   );
 });
 
-const initializeHowl = (src) => {
-  new Howl({
-    src,
-  });
-};
-
-piano.forEach(function (value) {
-  initializeHowl(value);
-});
-cleanGuitarSounds.forEach(function (value) {
-  initializeHowl(value);
-});
-distortedGuitarSounds.forEach(function (value) {
-  initializeHowl(value);
-});
-
 // all musical notes, can be useful for every instrument
 const notes = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
 
