@@ -1,3 +1,5 @@
+import { Howl } from "howler";
+
 function importAll(r) {
   return r.keys().map(r);
 }
@@ -29,6 +31,22 @@ distortedGuitarSounds.forEach((audioFile) => {
     audioFile.substring(14, audioFile.indexOf(".")),
     audioFile
   );
+});
+
+const initializeHowl = (src) => {
+  new Howl({
+    src,
+  });
+};
+
+piano.forEach(function (value) {
+  initializeHowl(value);
+});
+cleanGuitarSounds.forEach(function (value) {
+  initializeHowl(value);
+});
+distortedGuitarSounds.forEach(function (value) {
+  initializeHowl(value);
 });
 
 // all musical notes, can be useful for every instrument
